@@ -140,25 +140,25 @@ class App extends React.Component {
   render(){
     
     return (
-      <Router>
-        <Route exact path="/e-commerce" component = {HomePage}>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Route exact path="/" component = {HomePage}>
           </Route>
 
-          <Route exact path="/e-commerce/signin" component = {SignIn}>
+          <Route exact path="/signin" component = {SignIn}>
           </Route>
 
-      <Route exact path="/e-commerce/shoppingcart" component = {ShoppingCart}>
+      <Route exact path="/oshoppingcart" component = {ShoppingCart}>
           </Route>
 
-        <Route path="/e-commerce/:category/item/:id" component = {Details}>
+        <Route path="/:category/item/:id" component = {Details}>
           </Route>
-        <Route exact path="/e-commerce/electronics">
+        <Route exact path="/electronics">
           <PageComponent category="electronics" />
         </Route>
-        <Route exact path="/e-commerce/men's clothing">
+        <Route exact path="/men's clothing">
           <PageComponent category="men's clothing" />
         </Route>
-        <Route exact path="/e-commerce/women's clothing">
+        <Route exact path="/women's clothing">
           <PageComponent category="women's clothing" />
         </Route>
         
