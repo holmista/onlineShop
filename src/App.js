@@ -147,7 +147,7 @@ class App extends React.Component {
           <Route exact path="/signin" component = {SignIn}>
           </Route>
 
-      <Route exact path="/oshoppingcart" component = {ShoppingCart}>
+      <Route exact path="/shoppingcart" component = {ShoppingCart}>
           </Route>
 
         <Route path="/:category/item/:id" component = {Details}>
