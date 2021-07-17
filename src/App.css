@@ -1,38 +1,559 @@
-.App {
+.childdiv{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  
+  height: 530px;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  margin-top: 300px;
+  
+  margin: 0 auto;
+  margin-bottom: 50px;
+  
+  align-items: center;
+}
+
+
+
+.styleanimg{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  
+}
+p{
+  text-align: center;
+}
+.parentdiv{
+  margin: 0 auto;
+  display: flex;
+  width:90%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.removeLinkLine{
+  text-decoration: none;
+  transition-duration: 0.5s;
+  transition-timing-function:ease-out;
+}
+
+.removeLinkLine:hover{
+  color: red;
+  
+}
+
+.innerItemImageBox{
+  
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  margin-left: 50px;
+  max-height: 700px;
+  height: 700px;
+  max-width: 500px;
+  
+}
+.innerImage{
+  object-fit: cover;
+  
+  width: 100%;
+}
+.innerParent{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+
+}
+.innerTexts{
+  margin-left: 50px;
+  max-width: 900px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.linkWrapperForResponsive{
+  width: 250px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.firstpage{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 1200px;
+  background-color: rgb(56, 60, 71);
+  
+}
+.categorycolor{
+  color: rgb(175, 233, 233);
+  margin: 0 auto;
+  text-align: center;
+}
+.insideSlider{
+ 
+  overflow: hidden;
+  width: 600px;
+  height: 800px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Sliderpageparent{
+  margin: 0 auto;
+}
+
+.shortenCarousel{
+  max-width: 1000px;
+}
+
+
+.carousel-control-prev-icon{
+  background-color: black;
+  color: black;
+}
+.rec-arrow{
+  background-color: black;
+}
+
+.addtocart{
+  width: 150px;
+  background-color: rgb(61, 64, 71);
+  color: rgb(175, 233, 233);
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition-duration: 0.5s;
+  transition-timing-function:ease-out;
+  
+}
+
+.addtocart:hover{
+  cursor: pointer;
+  color: red;
+}
+
+
+.childwrapper{
+  height: 600px;
+  border: 1px solid black;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.componentparent{
   display: flex;
   flex-direction: column;
   align-items: center;
+  border:1px solid black;
+  
+  width: 600px;
+  margin: 0 auto;
+
+  margin-top: 50px;
+}
+
+
+.NavWrapper{
+  position: fixed;
+  
+  display: flex;
+  max-width: 85vw;
+  
+}
+.OverAllWrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  width: 100vw;
+  
+}
+
+.shoppingCartIcon{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgb(56, 60, 71);
+  width: 19vw;
+  
+}
+.CategoryBoxItems{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.adjustIcon{
+  color: aquamarine;
+  font-size: 27px;
+  transition-duration: 0.5s;
+  transition-timing-function:ease-out;
+}
+.adjustIcon:hover{
+  color: red;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+
+
+
+
+.ParentWrapper{
+  padding: 50px;
+  max-width: 95vw;
+  /* height:  85vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.ParentOfCategorys{
+  padding-bottom: 20px;
+  
+  width: 85vw;
+  /* height:  85vh; */
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+.categoryBoxes{
+  margin-top: 20px;
+  width: 40vw;
+  height: 40vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.centerlink{
+  margin: 0 auto;
+}
+.changecolor{
+  margin-top: 20px;
+  color: rgb(13, 77, 196);
+  font-size: 40px;
+  
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .shoppingCartIcon{
+    
+    padding-right: 50px;
+    
   }
-  to {
-    transform: rotate(360deg);
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .linkWrapperForResponsive{
+    
+    width: 200px;
+    
   }
 }
+
+@media only screen and (max-width: 350px) {
+  .linkWrapperForResponsive{
+    
+    width: 150px;
+    
+  }
+}
+
+@media only screen and (max-width: 288px) {
+  .linkWrapperForResponsive{
+    
+    width: 120px;
+    
+  }
+
+  .shoppingCartIcon{
+    
+    padding-right: 10px;
+    
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1445px) {
+  .CategoryBoxItems{
+    
+    margin-top: 160px;
+    
+  }
+}
+
+@media only screen and (max-width: 714px) {
+  .CategoryBoxItems{
+    
+    margin-top: 310px;
+    
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .CategoryBoxItems{
+    
+    margin-top: 330px;
+    
+  }
+}
+
+@media only screen and (max-width: 626px) {
+  .componentparent{
+    max-width: 90vw;
+    margin-left: 2px;
+  }
+
+  .childwrapper{
+    max-width: 88vw;
+  }
+
+  .childdiv{
+    max-width: 85vw;
+  }
+
+  .styleanimg{
+    max-width: 82vw;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  /* .childwrapper{
+    height: 780px;
+  } */
+
+  .componentparent{
+    height: 730px;
+  }
+  .childdiv{
+    height: 700px;
+  }
+
+ 
+}
+
+@media only screen and (max-width: 40px) {
+  /* .childwrapper{
+    height: 780px;
+  } */
+
+ .NavWrapper{
+   width: 100%;
+ }
+}
+
+
+@media only screen and (max-width: 32px) {
+  /* .childwrapper{
+    height: 780px;
+  } */
+
+ .OverAllWrapper{
+   margin-right: 30px;
+ }
+ 
+
+ 
+}
+
+@media only screen and (max-width: 500px) {
+  .changecolor{
+    
+    font-size: 30px;
+    
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .changecolor{
+    
+    font-size: 25px;
+    
+  }
+}
+
+
+@media only screen and (max-width: 315px) {
+  .changecolor{
+    
+    font-size: 20px;
+    
+  }
+}
+
+
+.centerText{
+  text-align: center;
+}
+
+
+.shoppingCartItemWrapperBox{
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 40px;
+  width: 75vw;
+  /* margin-left: 0px; */
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.shoppingCartItemsWrapperBox{
+  padding-top: 100px;
+  
+
+}
+
+@media only screen and (max-width: 1445px) {
+  
+  .shoppingCartItemsWrapperBox{
+    padding-top: 200px;
+    
+  }
+
+}
+
+@media only screen and (max-width: 713px) {
+  
+  .shoppingCartItemsWrapperBox{
+    padding-top: 300px;
+    
+  }
+
+}
+
+
+@media only screen and (max-width: 350px) {
+  
+  .shoppingCartItemsWrapperBox{
+    padding-top: 350px;
+    
+  }
+
+}
+.totalWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(82, 236, 82);
+  padding: 10px;
+  margin-top: 40px;
+  max-width: 600px;
+  inline-size: 800px;
+  overflow-wrap: break-word;
+  text-align: center;
+  
+}
+
+.shoppingItemTitleWidth{
+  inline-size: 400px;
+  overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 570px) {
+  
+  .shoppingItemTitleWidth{
+    inline-size: 300px;
+    
+  }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+  
+  .shoppingItemTitleWidth{
+    inline-size: 200px;
+    
+  }
+
+}
+
+@media only screen and (max-width: 255px) {
+  
+  .shoppingItemTitleWidth{
+    inline-size: 150px;
+    
+  }
+
+}
+
+
+@media only screen and (max-width: 830px) {
+  
+
+  .shoppingCartItemWrapperBox{
+    
+    width: 90%;
+    
+  }
+
+  
+  .shoppingCartItemsWrapperBox{
+    width: 80%;
+    
+
+  }
+  .totalWrapper{
+    width: 40%;
+  }
+}
+
+
+
+.QuantityAndPriceWrapper{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  
+}
+
+@media only screen and (max-width: 890px) {
+  
+  .OverAllWrapper{
+    width: 90vw;
+    align-items: center;
+  }
+  .centerText{
+    margin-top: 20px;
+  }
+  .shoppingCartItemWrapperBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .QuantityAndPriceWrapper{
+    flex-direction: column;
+  }
+}
+
